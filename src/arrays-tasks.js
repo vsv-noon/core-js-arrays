@@ -20,8 +20,9 @@
  *    getIntervalArray(0, 100) => [ 0, 1, 2, ..., 100 ]
  *    getIntervalArray(3, 3) => [ 3 ]
  */
-function getIntervalArray(/* start, end */) {
-  throw new Error('Not implemented');
+function getIntervalArray(start, end) {
+  // return new Array(end - start + 1).fill(start).map((el, i) => el + i);
+  return Array.from(Array(end - start + 1)).map((el, i) => start + i);
 }
 
 /**
